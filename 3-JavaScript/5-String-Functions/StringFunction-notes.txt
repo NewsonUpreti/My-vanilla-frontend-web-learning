@@ -1,0 +1,51 @@
+Returning the position.
+ var str = "This is a string" ;
+       console.log(str);
+       var position = str.indexOf('is');
+       console.log(position);
+    the above code will print 2 in console
+
+ // getting subscript from a string | basic slicing method.
+       var substr = str.slice(1,5);
+       console.log(substr);
+  In the above case, the item between the postion 5 and position 1 will be sliced from the main string and it will be a substring.
+
+  var substr = str.substring(1,7);
+       console.log(substr);
+the above code just works as the slice but can't negative values whereas slicing can take negative values.
+
+ var substr1 = str.substr(1,7);
+    console.log(substr1);
+    In this case the value 1 is starting point and 7 is number of elements that should be contained in the new string which is substring.
+
+ // How to replace the existing string declared
+    var replaced = str.replace('string','replaced string');
+    console.log(str);
+    console.log(replaced);
+    -- This will replace the string but only when it is performed and it does not replace the string when it was declared in the beginning.
+
+//Changing the case of the string:
+console.log(str.toUpperCase())  
+//will convert the string str items to UPPERCASE
+
+
+//concatenating the two strings with function.
+var newString = str.concat('New string');
+console.log(newString);  the new string will be added to the initial string of str.
+
+// trimming the whitespaces from both sides with .trim function 
+var strWithWhitespaces = ("      this      is        content      ");
+console.log(strWithWhitespaces)
+console.log(strWithWhitespaces.trim());
+
+
+// getting a character from a string by giving its index position.
+var char3 = str.charAt(3);
+console.log(char3);
+
+// getting code of specific character
+var char3 = str.charCodeAt(3);
+console.log(char3);
+
+//directly printing through the index positioning
+console.log(str[3]); 

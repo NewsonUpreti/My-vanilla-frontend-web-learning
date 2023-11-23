@@ -1,0 +1,6 @@
+Here is all about grid template areas:
+ grid-template-areas:
+    'navbar navbar navbar navbar'
+    'section section section aside'
+    'footer footer footer footer' ;
+see the corresponding website to understand the meaning of the above codes 

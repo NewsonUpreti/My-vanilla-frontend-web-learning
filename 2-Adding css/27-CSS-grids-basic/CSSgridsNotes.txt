@@ -1,0 +1,13 @@
+CSS grids:
+It is a display property.
+By giving the display :grid; we can include any box to the grid.
+CSS grid means positioning the item with two dimensional feature like a sudoku or a table and then fitting it inside the container with expanding or reducing their size. The items inside the grid container are known as grid items
+
+grid-template-columns: 100 px 200px 300px; will make the container into 3 colums with the given pixels and if we put auto in place of the pixels the column size will be automatically processed accordingly.
+
+ grid-template-columns: 1fr 4fr 1fr; using the fr units we can give the amount of part to the specific column also known as ratio in basic..
+
+
+ grid-template-columns: repeat(10, auto);  >> This will work as repeated manner of separating columns where 10 is the number of repititions
+
+ grid-gap: 2rem; this will add the gap between the grids which will add the gap between the grids that we made

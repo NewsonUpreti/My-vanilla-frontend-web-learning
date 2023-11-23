@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Conditionals</title>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = "This is String1";
+        var string1 = "This is String2";
+        console.log(string1);
+        {
+            let a = "u";
+            {
+                let a = "x";
+                console.log(a);
+            }
+            console.log(a);
+        }
+
+        const a = "this cannot be changed with any upcoming changing codes, this is constant value"
+        // a = "I want to changes this ";
+        console.log(a);
+
+
+        // Conditional statements in JavaScript
+
+        let age = 21;
+        if (age > 18 && age < 60) {
+            console.log("You can drink alcohol")
+        }
+        else if (age >= 60) {
+            console.log(`Alcohol is not recommended for you `)
+
+        }
+        else {
+            console.log("You cannot drink alcohol now")
+        }
+
+        console.log("lets move towards switch case statement now");
+
+        const cups = 4;
+        switch (cups) {
+            case 4:
+                console.log("The value of this cup is 4");
+                break;
+            case 14:
+                console.log("The value of this cup is 14");
+                break;
+            case 24:
+                console.log("The value of this cup is 24");
+                break;
+            case 34:
+                console.log("The value of this cup is 34");
+                break;
+
+            default:
+                console.log("The value of cup is not specified")
+                break;
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

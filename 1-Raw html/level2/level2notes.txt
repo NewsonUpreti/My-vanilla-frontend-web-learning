@@ -1,0 +1,42 @@
+anchor tag
+ <a href="linkHere">textToBeClicked</a>
+which is used to redirect us to the url
+inside the href we provide the link and text to be clicked inside the opening and the closing tag
+
+inside the attribute href we can give the links of the various websites
+
+heading tag <h1> the biggest <h2> little smaller and so on and importance also the same to those headings like primary secondary and so on.
+note: we should never use heading tag to make the required text bold or bigger
+
+img tag 
+this tag is used to add images in an html page using the absolute link or
+ the relative link which file lies within our server and no third party are accessed to it
+
+while using anchor and giving the link we can also give the relative link which is not everywhere but only in our pc or folder that the link will be redirected to our own server
+
+bold italic and underline tags 
+<b> text here </b>
+<i> text here </i>
+<u> text here </i>
+
+<br> tag to get forwarded to a new line
+
+big and small tag to write the text in big and small fonts
+
+hr tag to add the horizontal divider kinda line
+
+sub script and superscript 
+sub tag to put base like h20 where 2 should be in sub tag 
+sup tag to add power to words and numbers like square and cube  or any 
+
+
+pre tag
+this tag is used to display the contents as same as it is typed like spaces and everything will be rendered as typed specially used to type programming language codes where new lines and spaces are not ignored to print with accurate formatting
+
+
+tags to show arrows in html
+    &larr;
+    &rarr;
+    &rarr;
+    &uarr;
+    &harr;

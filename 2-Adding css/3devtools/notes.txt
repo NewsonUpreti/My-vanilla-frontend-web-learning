@@ -1,0 +1,1 @@
+level 2 is all about using the css and js with the help of browser and testing with the inspect feature and making the website well.

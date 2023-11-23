@@ -1,0 +1,10 @@
+This is the notes for basic resposive web project using basic css properties.
+
+li.item{ <a> </a>}*5 will create 5 li with class li along with the anchors
+
+Smooth scrolling method: 
+html{
+    scroll-behaviour:Smooth;
+}
+
+To provide the sticky position, we need to provide top:0; and left:0; sometimes

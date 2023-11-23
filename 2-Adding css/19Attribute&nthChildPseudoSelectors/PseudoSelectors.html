@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+        input {
+            display: block;
+
+        }
+
+        .container {
+            margin: auto;
+            width: 240px;
+            display: block;
+        }
+
+        input[type='text'] {
+            border: 4px solid red;
+            padding: 20px;
+        }
+
+        /* If we just want to use pseudo selector for the attribute whose target is set is styled as given below */
+        a[target] {
+            background-color: tomato;
+            color: aqua;
+        }
+
+        a[target='_self'] {
+            background-color: aqua;
+            color: black;
+        }
+
+        input[type='email'] {
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            border: 4px solid rgb(4, 4, 142);
+            padding: 4px;
+            border-radius: 10px;
+        }
+
+        input[type] {
+            margin: 3px;
+        }
+
+        /* Below code will apply css for the fourth child of the list */
+        /* li:nth-child(4) {
+            color: red;
+        } */
+
+        /* Below code will apply css to every items leaving a gap which means in first case n will be zero and then 1 and then 2 and so on  */
+
+        li:nth-child(2n+1) {
+            color: white;
+            background-color: rgb(0, 0, 0);
+
+        }
+
+        li {
+            border: 2px solid black;
+            padding: 3px;
+
+        }
+
+        /*  Below is the code to style the odd and even childs */
+        li:nth-child(even) {
+            background-color: rgb(189, 198, 198);
+            color: black;
+        }
+
+        li:nth-child(odd) {
+            background-color: rgb(0, 0, 0);
+            color: rgb(0, 222, 215);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> <a href="https://www.google.com" target="_blank">Google.com</a></h1>
+        <h1> <a href="https://www.facebook.com" target="_self">Facebook.com</a></h1>
+
+
+
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="email" placeholder="Enter your email:">
+            <input type="submit" value="submit">
+
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item1</li>
+            <li class="item" id="item-2">Item2</li>
+            <li class="item" id="item-3">Item3</li>
+            <li class="item" id="item-4">Item4</li>
+            <li class="item" id="item-5">Item5</li>
+            <li class="item" id="item-6">Item6</li>
+            <li class="item" id="item-7">Item7</li>
+            <li class="item" id="item-8">Item8</li>
+            <li class="item" id="item-9">Item9</li>
+            <li class="item" id="item-10">Item10</li>
+            <li class="item" id="item-11">Item11</li>
+            <li class="item" id="item-12">Item12</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

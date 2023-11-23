@@ -1,0 +1,24 @@
+Media Queries:
+-- When the screen is resized, specific CSS needs to be injected inside the webpage as given below
+@media(max-width:300px) /*max-width:400 means from 0px to 400px the following css will be active in the website */
+    {
+        #box-1{
+            display:block;
+        }
+    }
+    @media (max-width:500px) and (min-width:300px)
+    {
+        #box-2{
+            display: block;
+            background-color: aquamarine;
+
+        }
+    }
+    ::Media queries are fired as soon as the conditions are true. 
+
+    media types in css:
+     @media only screen and (max-width:500px)
+In the above statement, only screen means just simplifying to process that the css should be used for the only screen contents.
+
+
+

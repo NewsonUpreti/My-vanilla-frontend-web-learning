@@ -1,0 +1,53 @@
+CSS- transitions
+KeyFrames and animations
+
+In order to use the animation property we need to provide the animation name inside the main styling of any items which looks like this as given below
+.box{
+    background-color: aquamarine;
+    border-radius: 0px 100px 100px 0px;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    animation-name: new1;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes new1{
+    from{
+width: 200px;
+    }
+    to{
+width: 600px;
+    }
+}
+
+ animation-fill-mode: forwards;
+ above code wil fill start the animation and pause at its highest forwared or to{ } condition and backwards will end at the from position.
+ animation-fill-mode: alternate; This will end the animation once to{} is reached and comes to initial point again
+
+ animation-timing-function: ease-in or ease-out or ease-in-out; -- This will control the flow of the animation.
+
+ Basic animation properties syntax are given below
+ .box{
+    background-color: aquamarine;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    animation-name: new1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in;
+    animation-delay:3s;
+}
+@keyframes new1{
+    from{
+width: 200px;
+    }
+    to{
+width: 1000px;
+    }
+
+
+shorthand for animation properties:
+animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode

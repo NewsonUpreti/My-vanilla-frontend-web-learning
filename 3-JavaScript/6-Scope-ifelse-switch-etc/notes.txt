@@ -1,0 +1,24 @@
+var string1 = "This is String1";
+        var string1 = "This is String2";
+        console.log(string1);  
+
+In order to avoid errors created while declaring the variable with same name and the previous ones will lose its functionality we are going to use the let method and creating the block for it which is strong within its block
+
+In order to create the same named variable within the program we can create block by using the let instead or var which only creates unique named variables.
+
+        let a = "u";
+        {
+            let a = "x";
+            console.log(a);
+        }
+        console.log(a);
+    
+    first x will be printed and then u will be printed . I hope I understand it.....
+    the value u will be global and accesed everywhere in the program just like var but the one which is inside the block can't be acceses outside the box
+
+    NOTE: Always keep any kind of variable name which is related to the content to make easily understandable code and ease the debugging process.
+
+    If else statements same as I learnt in C programming..
+    In JS for web, if-else is used to get the proper and valid input from the user.
+
+    In switch case: breaks are used to break the process of the switch once the condition is matched and just print or perform the action within that case and not further cases as you can see the example corresponding code.

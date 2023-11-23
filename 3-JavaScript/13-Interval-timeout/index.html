@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Set timeout|clear timeout</title>
+    <style>
+        .container{
+            display: inline-block;
+            background-color: black;
+            color: white;
+            padding: 13px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<span id="timeIntro">Time Now is </span> <span id="time"></span>
+    </div>
+    <script>
+        console.log(" This code is all about timeout functions in in-browser JavaScript");
+        //Timeout functions
+        // setTimeout --> allows us to run the function once after the interval of time.
+        // clearTimeout --> Allows us to clear the setTimeout function .
+        //setInterval allows us to repeatedly run the function with time gaps
+
+        function greet(name, Goodbye){
+            console.log ("Hello There! "+name+ " "+ 
+            Goodbye)
+        }
+    //   setTimeout(greet, 2000,"Niall,","Take Care and TTYL");
+      // we just need to give the function text name and not the function full like greet()
+      // using the above ways we can set the timeout functions.
+    //   greet is the function where the timeout will be applied and 2000 is the timing in ms and other are the arguments that the functions needs from us...
+
+    // timeOut = setTimeout(greet,5000,`"name"`, "Take Care");
+    // console.log(timeOut);
+    // the above given timeOut will return the unique id of the setTimeout 
+
+    // clearTimeout(timeOut); // once the timOut is declared we will be able to clear the timeOut using its ID with clearTimeout 
+
+
+    // setInterval function..
+    // intervalId = setInterval(greet,1000,"New","Bye BYe");
+    // clearInterval(intervalId);// the clearInterval takes the unique id of the interval which is set and then clears the interval like which is no longer required for the program.
+
+    function displayTime(){
+
+    time = new Date();
+    // console.log(time);
+    document.getElementById('time').innerHTML = time;
+    } 
+    setInterval(displayTime,1000);
+
+    intervalId=setInterval(displayTime,1000);
+    clearInterval(intervalId);
+
+   
+    document.getElementById('timeIntro').innerHTML="Present Date and Time is ";
+
+
+
+
+
+
+    </script>
+</body>
+</html>

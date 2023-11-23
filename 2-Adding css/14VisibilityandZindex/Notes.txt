@@ -1,0 +1,12 @@
+useful shortcut:
+if we type div.box#box$*10 it will create 10 different divs with box class and id will be box1 box2 box3 and so on.
+
+while using the color and backcolors we can give the visibility to it while styling it. the default visibility value is :visible;
+visibility: hidden; will hide the content but the space it covered will be seen blank but not replaced by other content. whereas if we use the tag like display: none; it won't be displayed in the entire webpage and it will be replaced by the following content 
+
+Note: z-index doesn't work in the default positioning or static position of the content
+Z-index is used to specify which one content should be visible when it is overlapped while using the position like relative
+
+z-index is used to specify the stacking position while they are overlapped or used over other content and areas
+The higher the z-index value the ahead it comes from the lower ones.
+for example the z-index of cheese is higher than the z-index of the pizza dough that's it. z-index is widely used during the time of responsive websites, social media apps and so on in order to stack the contents properly when required

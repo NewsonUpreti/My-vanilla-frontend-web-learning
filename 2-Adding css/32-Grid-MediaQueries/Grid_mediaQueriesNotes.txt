@@ -1,0 +1,63 @@
+In grid too media queries are used to display the contents in particular order during the particular resolution or the width of the screen to make the website resposive on multiple type of screens without messing up with the contents and the items.
+
+Below is the code to understand the basic understanding of the grid with media queries.
+
+This is initial rendermode of the website below coded.
+.container{
+    display: grid;
+    grid-gap: 0.6rem;
+    grid-template-areas:
+    'navbar navbar navbar navbar'
+    'section section section aside'
+    'footer footer footer footer' ;
+}
+
+this is the media queries used in the grid to render the website in many kind of devices.
+
+        @media (min-width:400px) and (max-width:800px) {
+            body {
+
+                background-color: aquamarine;
+
+            }
+            .container{
+                grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+            aside{ display: none;}
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media(min-width:800px) and (max-width:1200px) {
+            body {
+
+                background-color: violet;
+            }
+            .container{
+                grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+        }
+
+        @media(min-width:1300px) {
+            body {
+
+                background-color: blueviolet;
+            }
+            .container{
+                grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+        }

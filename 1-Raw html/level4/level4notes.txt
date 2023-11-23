@@ -1,0 +1,40 @@
+lists ul(ul stands for unordered list) we can give the types inside the ul tag like square and circle but type is recommended to use by css to avoid conflict with html. and li tag
+ol(ordered list tag) we can use the ordered list tag in order to make the list ordered by using numbers and I like roman numbers
+to display a list of contents using html
+
+table tag to make a table and display the icons in the table we can use border and give the size of the border margins
+
+tr tag means table row
+td tag means table data
+th tag means table header
+
+We can use the caption tag to give the caption to the table given 
+
+we use thead and tbody tag inside the table to specify the contents which one is the header and which one is the body contents
+its a way of wrapping the content. Where there are multiple tables its useful to design accordingly using these tags by wrapping.
+
+if we use colspan tag inside the header the header will take 3 td or table data which means the colspan will help us same data cover the multiple colums 2 or 3 or many more
+
+forms using form tag to make a form design to be filled up and take the input from the user
+in form tag in the action we put the address of the backend
+we use input tag inside the form tag to place the input type like text and placeholder which text is seen in blank form
+in the input tag along with the type we also use value name and ID which is really important to make as a identifier
+We combine the input tag inside a label tag to make the identity for ="specificname"
+Id is like roll number which belongs only to a specific one
+name inside the input tag like the type radio we should specify different id for the different input but name must be same while using the radio so that at a time only one radio button will be inputted like choose your gender male or female
+We use label for each input so that whenever we press the actual text instead of the radio button the label is all over the text and selection will be made as it will make the task user friendly.... Whatever is in the for id must be in the id inside the input tag
+while using the input tag in the form we can also use class in the input tag to specify the class where lot of element can be contained as a similar, We can also give more than one class by giving the spaces in between, class are specially used for grouping of the elements
+
+and there are many many types of inputs that we can use to make the 
+
+name is important in the form for the backend to read the name and know the value of that submitted form
+
+just like input we can enter the textarea tag with specified rows and columns to take the user review like stuffs 
+
+Inside the form we also have the select tag to select single thing among lot of list for example which brand smartphone do you use. we use lot of option tag to put the options to be chosen and a default option that says to select the options like select your favourite smartphone brand
+
+We can use the video tag in order to embed the video or bring the video from any web source like youtube, we can share and embed link and bring it on our website
+iframe tag: We can use the iframe tag in order to bring the video source from the web and play within our website
+iframe can load any websites like bing.com and wikipedia like webs in our website and also videos that are allowed to be embedded
+
+in the video tag giving the source of the video from our local file inside the tag we need to give attributes like controls autoplay loop 

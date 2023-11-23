@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-index</title>
+    <style>
+.box{
+    width: 170px;
+    height:170px;
+    border:2px solid black;
+}
+#box1{
+    background-color: blue;
+    /* visibility: hidden; */
+     /*while using the visibility hidden tag the content of it exists but is invisible, the area is reserved blank but the content is not visible*/
+    /* display: none;  */
+    /* In the above display tag none the content won't be displayed in the entire webpage and the content acts like it is not even in the web */
+}
+#box2{
+    background-color: aqua;
+    position: relative;
+    top: 50px;
+z-index: -100;
+    /* z-index will work only for position: relative, absolute ,fixed or sticky; */
+
+}
+#box3{
+    background-color: green;
+    position: relative;
+    top: 10px;
+    z-index: -500;
+}
+#box4{
+    background-color: rgb(255, 123, 0);
+}
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    
+</body>
+</html>

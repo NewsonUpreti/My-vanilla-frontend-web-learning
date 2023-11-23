@@ -1,0 +1,11 @@
+As we added background color to the texts.
+If we add height and width the color will be applied to the given height and width.
+If we add border choosing style like solid, the border will be applied to the given texts or any format.
+Here, we can specify border-width, border-color, border-style, border-radius and so on 
+border radius makes the edge rounded 
+we can add border top border right border bottom to add border to particular sides by using border-right border-top attributes
+
+We can add radius to different corners like border-top-left border-bottom-right tags
+
+We can add background images by using the background image tag in the style
+we can perform background repeat background position background size and so on

@@ -1,0 +1,28 @@
+Functions are the building block that operates the task which is assigned to it by the code.
+
+let thename = "JSon ";
+let thename1 = "aSon ";
+let thename2 = "bSon ";
+let thename3 = "cSon ";
+let thename4 = "gSon ";
+
+console.log(thename + "is good");
+console.log(thename1 + "is good");
+console.log(thename2 + "is good");
+console.log(thename3 + "is good");
+console.log(thename4 + "is good");
+
+// Instead of doing the above long codes, we can create a function which can do the task when called 
+function greet(anyname){
+    console.log(anyname + "is a good man");
+}
+let thename = "JSon ";
+let thename1 = "aSon ";
+let thename2 = "bSon ";
+let thename3 = "cSon ";
+let thename4 = "gSon ";
+
+greet(thename);
+greet(thename3);
+
+Multiple functions given in the corresponding js file.

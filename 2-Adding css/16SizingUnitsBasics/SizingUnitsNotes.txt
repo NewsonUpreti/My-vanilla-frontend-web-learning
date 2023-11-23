@@ -1,0 +1,49 @@
+Responsive design meaning:
+Endless new resolutions and devices are difficult to support separately for a web developer.
+Responsive design is a way for a web developer to make his website to adapt all the devices and resolutions
+Responsive design is a necessity and not optional anymore 
+
+Various ways to achieve responsive design:
+1) Setting up the viewport.
+2) Use max-width/max-height.
+3) Using CSS Media Queries.
+4) Using rem/vh/vw units over pixels.
+
+Now we are going to learn about the sizing units.
+-----first of all font sizing----
+.container{
+        font-size: 10px;
+    }
+    h1{
+        text-align: center;
+        font-size: 3em;
+    }
+
+    em units in sizing( em is the multiplier for the font size of the parent as we can see in the corresponding html code)
+In the above case, the container is the parent of the heading with the font size 10px whenever we use the font size 10 em the font size will be 10 times bigger than the parent font size which means 100px in place of 10px
+
+em unit is used to resize the element based on the parent object 
+
+ html{
+        font-size: 25px;
+    }
+    #heading3{
+        font-size: 3rem;
+        padding: 3rem;
+    }
+    relative size multiplication
+    rem
+    rem works with the raw html and size the element based on beginning initial value of the size of the element where padding size will also be multiplied using rem sizing unit in the similar manner as the font do.
+
+
+Now time to learn about the viewport height and viewport width or vh and vw 
+if we give 100vh height then the viewed height will be exactly as the webpage height and same goes for vw. which simply means viewable height and viewable height according to the website rendered
+
+
+
+
+
+
+
+
+

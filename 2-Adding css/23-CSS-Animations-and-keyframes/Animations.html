@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations and keyframes</title>
+    <!-- Keyframes and animation -->
+    <style>
+        .container {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .box {
+            background-color: rgb(3, 6, 5);
+            width: 250px;
+            height: 250px;
+            position: relative;
+            border-radius: 200px;
+            box-shadow: inset 10px 10px 10px white;
+            /* animation-name: new1; */
+            /* animation-name: new2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite; */
+            /* animation-fill-mode: backwards; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 0.2s; */
+            /* animation-direction:alternate; */
+
+            /* using shorthand in css animations as given below*/
+            animation: new2 4s ease-in-out 0s infinite backwards;
+        }
+
+        @keyframes new1 {
+            from {
+                width: 250px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+
+        @keyframes new2 {
+            10%{
+                top: 0px;
+                left: 0px;
+            }
+            20%{
+                top: 250px;
+                left: 250px;
+            }
+            30%{
+                top: 0px;
+                left: 500px;
+            }
+            40%{
+                top: 250px;
+                left: 250px;
+            }
+            50%{
+                top: 500px;
+                left: 500px;
+            }
+            60%{
+                top: 250px;
+                left: 250px;
+            }
+            70%{
+                top: 500px;
+                left: 0px;
+            }
+            80%{
+                top: 250px;
+                left: 250px;
+            }
+            90%{
+                top: 0px;
+                left: 0px;
+            }
+        }
+        .para{
+            
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            justify-content: center !important;
+            display: flex;
+            align-items: center;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="para">
+                <p>Ball</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

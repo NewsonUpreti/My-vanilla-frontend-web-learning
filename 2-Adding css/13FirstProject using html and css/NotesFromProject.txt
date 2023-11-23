@@ -1,0 +1,7 @@
+We are going to use the only techniques that we have used till now. No complex properties and no frameworks.
+As a beginner we can see example of website templates in the web to get some idea.
+we can display:block style and margin center to bring in the center
+
+In order to make the black logo into white, we need to use invert function in css which looks like this:     filter: invert(100%);
+
+Always keep the border for the elements until the final task done to avoid messing up and know the mistakes like overlapping

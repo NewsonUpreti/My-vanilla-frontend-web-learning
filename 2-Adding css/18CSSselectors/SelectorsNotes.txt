@@ -1,0 +1,15 @@
+while using div p { styling here } the direct and indirect all the paragraphs will get the modification inside the div.
+
+while using 
+div li p{
+            color: lightcoral;
+            background-color: black;
+            font-weight: normal;
+        }
+         In the above case the css will be applied to all of the paragraph of the li inside the div tag and  */
+
+but if we want to apply direct css to the paragraphs and any other contents. 
+
+div > p { styling here }    This method will add CSS to only the paragaph which is directly located inside the div.
+
+div + p{ styling here} In this case, the paragraph whose last sibling is div will get the styles given inside the code section.

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+
+    <style>
+      body {
+        background-color: black;
+      }
+      .box {
+        font-size: 54px;
+        text-align: center;
+        background-color: rgb(22, 186, 189);
+        color: black;
+        display: none;
+        height: 600px;
+      }
+      @media (max-width: 400px) /*max-width:400 means from 0px to 400px the following css will be active in the website */ {
+        #box-1 {
+          display: block;
+        }
+      }
+      @media (min-width: 401px) and (max-width: 800px) {
+        #box-2 {
+          display: block;
+          background-color: aquamarine;
+        }
+      }
+      @media (min-width: 801px) and (max-width: 1200px) {
+        #box-3 {
+          display: block;
+          background-color: violet;
+        }
+      }
+      @media (min-width: 1201px) {
+        #box-4 {
+          display: block;
+          background-color: blueviolet;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box-1">This is Mobile phone</div>
+    <div class="box" id="box-2">This is Tablet</div>
+    <div class="box" id="box-3">This is Normal PC screen</div>
+    <div class="box" id="box-4">This is Wide Monitor</div>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+we specially use the name index.html because this is the starting point of the website and our website start initially loading from this location and view on the browser or the webpage that we are looking at
+
+<html> tag
+the html web begins from the tag <html> and the entire web falls under this tag
+</html>
+
+<head> tag
+contains metadata which means that everything under this tag contains the information about the already existing data 
+metadata means the data of the data.
+which means if a college is a web department and faculties are data
+all faculties like bca bba ba bcom are data of college and students are data of bca or bba or bcom
+Hence, the head contains the data and additional existing data that are to be shown are called metadata
+
+In the meta charset="UTF8" it means the encoding of the html is used UTF8
+
+meta http-equiv UA compatible  content IE=Edge is used for compatibility of the html to the browsers
+
+meta name = viewport and content device width etc. are used to make the website properly rendered in any devices
+
+body contains everything tags and codes and informations that is going to be rendered in the website

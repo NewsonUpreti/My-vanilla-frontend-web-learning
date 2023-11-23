@@ -1,0 +1,120 @@
+/* In this file we are going to make how our website will be seen in a mobile phone or a narrow device */
+
+/* Navigation */
+#navbar{
+    flex-direction: column;
+    margin-bottom: 10px;
+
+}
+#logo img{
+    height: 60px;
+    margin: 10px 20px;
+
+}
+#navbar ul li a{
+    font-size: 1rem;
+   padding: 0px 6px;
+    /* padding-bottom: 10px;
+    padding-top: 0px;
+    padding-right: 6px;
+    padding-left: 6px; */
+
+}
+#navbar ul{
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+
+/* Home */
+#home{
+    height: 300px;
+    flex-direction: column;
+    padding: 3px 3px;
+
+
+}
+#home p{
+    font-size: 1rem;
+    padding: 0px;
+    margin: 0px;
+}
+#home::before{
+    height: 520px;
+}
+.btn
+{
+    padding: 3px;
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+
+/* Services */
+.services-container h1{
+    margin-top: 50px;
+}
+#services{
+flex-direction: column;
+clear: both;
+margin-top: 0px;
+}
+#services .box{
+    margin: 6px;
+}
+#services .box img{
+    height: 130px;
+}
+#services .box p{
+
+    font-size: 1rem;
+}
+
+
+/* Clients */
+#clients{
+    flex: wrap;
+}
+#clients img a{
+    width: 66px;
+    padding: 5px;
+}
+.client-item a img{
+    width: 70px;
+    height: auto;
+    padding: 10px;
+}
+
+
+/* Contact */
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: 10px;
+    font-size: 1rem;
+
+}
+label{
+    padding: 2px 3px;
+}
+
+
+/* Footer */
+footer{
+    bottom: 0;
+    left: 0;
+}
+
+
+
+/* utility classes*/
+.h-primary{
+    font-size: 35px;
+    margin: 0px;
+    padding-top: 0px;
+}
+.h-secondary{
+    font-size: 1.5rem;
+
+}

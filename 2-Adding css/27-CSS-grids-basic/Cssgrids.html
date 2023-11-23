@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grids</title>
+    <style>
+        .container{
+            /* initializing container as a grid below where the below items like item1 and item 2 which is inside the container are grid items */
+            display: grid;
+            /* grid-template-columns: 300px 100px 100px; */
+            /* grid-template-columns: 300px 100px auto; */
+            /* grid-template-columns: 300px auto 100px; */
+            /* grid-template-columns: 1fr 4fr 1fr; */
+            grid-template-columns: repeat(3, auto);
+            grid-gap: 2rem;
+
+        }
+
+        .item{
+            /* height: 100px;
+            width: 100px; */
+            background-color: aqua;
+            margin: 3px;
+            border:2px solid black;
+            padding: 10px 2px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="item">This is item1</div>
+    <div class="item">This is item2</div>
+    <div class="item">This is item3</div>
+    <div class="item">This is item4</div>
+    <div class="item">This is item5</div>
+    <div class="item">This is item6</div>
+    <div class="item">This is item7</div>
+    <div class="item">This is item8</div>
+    <div class="item">This is item9</div>
+    <div class="item">This is item10</div>
+    <div class="item">This is item11</div>
+    <div class="item">This is item12</div>
+</div>
+    
+</body>
+</html>

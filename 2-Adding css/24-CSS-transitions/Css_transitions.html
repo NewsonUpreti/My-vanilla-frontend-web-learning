@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - transitions</title>
+    <style>
+        body{
+            background-color: black;
+        }
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    border-radius: 20px;
+    /* telling the css program that the below property transition is connected */
+    /* transition-property: background-color,color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 2s; */
+
+    /* shorthand for transition is as given below  */
+    transition: all 0.4s ease-in-out 0s;
+
+}
+#box:hover{
+   background-image: linear-gradient(skyblue,blue);
+    color: rgb(0, 0, 0);
+    height: 210px;
+    width: 210px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+#box:active{
+    background-color: rgba(15, 60, 45,0.5);
+    color: aliceblue;
+    height: 320px;
+    width: 320px;
+    border-radius: 20px;
+    font-size: 30px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+<h2>Css transitions will be seen in this page</h2>
+    </header>
+    <main>
+        <div class="container">
+            <div id="box">
+                This is my box
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,10 @@
+while adding the grid-gap we can also specify grid-column-gap and grid-row-gap
+
+.box:first-child{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+In the above condition, the first item of the grid will be starting from position 1 and ending at position three covering those all space from column 1 to 3. and same procedure for the row.
+
+ grid-column: 1/ span3; -- In this case, the 1st item will take the space of 3 columns and same method for the row.
+

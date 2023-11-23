@@ -1,0 +1,3 @@
+We can insert JS to our html just in head or before end of the body.
+-- The reason why JS is the end before body ends is the content will be loaded first and then only the JS will be applied or loaded in the website in order to make the DOM better.
+We can see the errors in the console in the browser while using the inspect feature.

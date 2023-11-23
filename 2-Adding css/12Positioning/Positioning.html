@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSpositions</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: grey;
+            height: 4000px;
+        }
+        .box{
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+        }
+        #box1{
+            position: static;
+            /* Static position is the default without even applying the style */
+        }
+        /* Below is an example of relative positioning which will be applied to its own old position */
+        #box3{
+            position:static;
+            top: 45px;
+            left: 40px;
+        }
+        /* Below is an example of absolute positioning which will be applied according to its first parent position which is container in this page of code
+        * #box2{ 
+            position: absolute;
+            top: 12px;
+            right: 6px;
+
+        } */
+        #box4{
+            background-color: aquamarine;
+            position: fixed;
+            right: 10px;
+            bottom: 5px;
+        }
+        #box2{
+            position: sticky;
+            top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">Chat with Us</div>
+</div>
+</body>
+</html>

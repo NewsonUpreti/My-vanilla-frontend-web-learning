@@ -1,0 +1,20 @@
+Way of Creating template using variables.
+var string = "This";
+        var name = "Newson";
+        var channel = "web";
+        var msg = "He is Learning web development";
+        var temp = ` ${name} is a student and he is learning ${channel}`;
+        console.log(temp);
+
+after using the ` ` instead of '' and "" we don't get errors inside the variable while we use '' or "" inside the variable template. 
+
+Getting length of any variable
+   console.log(temp);
+        var len = name.length;
+        console.log(`Length of name is `+len);
+\n creates new line escaping the initial line
+
+Using this method given below, we can add html elements dynamically to DOM:
+document.getElementById("content").innerHTML = " <h3> This is an h3 heading </h3>"
+
+The inner html will be added to the html whose id is "content" , so from basic we need to have good commands over strings in JavaScript.

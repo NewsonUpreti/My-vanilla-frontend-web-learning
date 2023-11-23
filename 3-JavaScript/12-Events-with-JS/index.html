@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events with JavaScript</title>
+    <style>
+      #btn {
+        padding: 10px;
+        color: white;
+        background-color: rgb(10, 23, 52);
+        border: 3px solid rgba(0, 0, 0, 0.5);
+        border-radius: 9px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 10px 10px 20px rgb(0, 0, 0);
+        animation: button 5s infinite;
+      }
+      @keyframes button {
+        25% {
+          box-shadow: -10px -10px 20px black;
+        }
+        50% {
+          box-shadow: 10px 10px 20px black;
+        }
+        75% {
+          box-shadow: -10px -10px 20px black;
+        }
+
+        100% {
+          box-shadow: 10px 10px 20px black;
+        }
+      }
+      #btn:hover {
+        color: rgb(255, 255, 255);
+        background-color: rgb(26, 78, 108);
+        border: 3px solid black;
+        border-radius: 9px;
+        transition: all 0.4s ease-in-out;
+      }
+      #btn:active {
+        color: rgb(255, 255, 255);
+        background-color: rgb(19, 117, 146);
+        border: 3px solid black;
+        border-radius: 9px;
+        transition: all 0.1s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="home">
+      <h2>Events from the user in JavaScript</h2>
+    </div>
+    <!-- Browser events: <br>
+    1)click
+    2)contextmenu (right click)
+    3)mouseover/mouseout
+    4)mousedown/mouseup
+    5)mousemove
+    6)focus
+    7)DOMContentLoaded
+    8)TransitionEnd -->
+    <hr />
+    <div class="container">
+      <h1>Title</h1>
+      <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quo
+        veritatis, et natus sunt dolorum iusto fugiat non aperiam numquam
+        laboriosam reprehenderit nulla architecto quisquam a itaque accusamus!
+        Unde quaerat voluptatibus culpa, labore eligendi laborum deleniti
+        praesentium explicabo totam exercitationem tempore quam reiciendis
+        veniam facere numquam quod asperiores! Quam et doloremque reprehenderit
+        autem veritatis non tempore? Suscipit amet minima ex velit officia ut in
+        nesciunt harum maxime exercitationem neque aperiam fugit magni,
+        quibusdam quos non aut accusamus ea blanditiis! Harum sed optio
+        voluptas, doloremque voluptatum error reiciendis laborum quisquam,
+        pariatur lboriosam libero earum? Eveniet, animi! Amet cum quas dolorem
+        voluptatum alivoluptatem odit natus earum corporis tempore libero quas?
+        Quidem, cumque autem accusamus aut animi impedit eius, architecto velit,
+        dicta coarrupti reprehenderit ipsa a? Ducimus molestias perferendis
+        accusamus, facere eum ex ad animi dolores molestiae eius architecto
+        blanditiis non pariatur nesciunt. Maiores, cumque?
+      </p>
+    </div>
+    <button id="btn" onclick="togglehide()">SHOW / HIDE</button>
+  </body>
+  <script>
+    console.log("This page is all about events in JavaScript");
+    //Event is a signal that user inputs any kind of action like click hover scroll type and so on.
+
+    function togglehide() {
+      let button = document.getElementById("btn");
+      let para = document.getElementById("para");
+      if (para.style.display != "none") {
+        para.style.display = "none";
+      } else {
+        para.style.display = "block";
+      }
+    }
+    // By using the above given procedure onclick function we can listen to the click events
+    // just like that we can put many events like onmouseover and so on..
+
+    //We can add the event listener by using the following method..
+    let para = document.getElementById("para");
+    // Even if we don't declare the para but the id is given is html then we can add functions and event listeners to the webpage by the below given way
+    para.addEventListener("mouseover", function run() {
+      //   alert('mouse in the paragraph');
+      console.log("mouse inside the paragraph");
+    });
+    para.addEventListener("mouseout", function run() {
+      // alert('mouse is away');
+      console.log("mouse is away from the paragraph");
+    });
+  </script>
+</html>

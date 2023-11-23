@@ -1,0 +1,5 @@
+We can only specify width in the block element and not in the inline element.
+inside the styling if we create display-inline the element will only take the space it requires and display-block will take the space all the space where there is no element horizontally to it. In the display-block we can make the margin auto and then specify the width to it. 
+But if we want to specify width but also make it inline, the thing is display: inline-block
+
+And If we give the box-sizing: border-box. the width will remain constant along with the margin and padding

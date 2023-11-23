@@ -1,0 +1,32 @@
+using the right tag in the right place makes the page layout better and SEO will be better 
+
+inside the body the main three page layout tags goes like:
+header: intro navigation and topic 
+main: description and bulk informations
+footer: conclusion and end details
+ and all these three combines to make a website layout in a formatted manner that can be optimized for the SEO and robots can also find out what is the content provided in the website
+
+ header tag:
+ inside the header tag we specially include topic title and navigation bars tag
+
+ main tag:
+ this is the most important part of the webpage
+ we specially include:
+
+ <section> tag: A page section i.e. Different sections for the different topics.
+
+ <article> A Self contained content is added to the page. like the particular things that must be highlighted like testimonals and your releases of something and so on
+
+<aside> tag; In this tag we specially include the remaining things like ads which are not related particularly to the web or the content
+
+<div> tag : This tag takes the whole space even if the content inside the div tag is not there. So we can use the div tag as per need to put designs colors and all combinely 
+
+<span> tag : This tag takes the space only small or the only space that the content inside this tag can hold and leave all the other space around it.
+
+while adding links to our website if we use the attribute target ="_main" or target="_blank" the clicked link will be opened in the new tab
+
+We can also use images to click and redirect to the link provided
+
+while using the tons of images from a single folder we can given the location. for example photon.png is inside the folder webimages  while giving the image location we need to give the location like webimages/photon.jpg
+
+we use ul tag li tag to make a list of items

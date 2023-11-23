@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="Home">
+        <nav align="center"> <strong> <a href="#Home">Home</a> <a href="#contact"> Contact</a> <a href="#form"> Form</a> <a href="#hel">Help</a></strong></nav>
+        <h1 align="center">Welcome to the web of html basics tag usage</h1>
+    </header>
+    <main>
+        <div>
+            <strong>
+                <ul>
+                    <li> Below are the links to be redirected to some of the famous websites which is also called
+                        absolute link method
+            </strong> <br>
+            <a href="https://www.google.com" target="_blank">GOOGLE</a>
+
+            <a href="https://www.codewithharry.com" target="_blank"> Code with Harry</a>
+            <a href="https://www.facebook.com" target="_main">Facebook</a>
+            <a href="https://www.amazon.com" target="_blank">Amazon</a>
+            </li>
+            </ul>
+        </div>
+        <div>
+            <strong>Below is an example of inserting image using html and in the same way we can insert videos with video tag</strong><br>
+            <img src="images/Screenshot from 2022-10-20 13-01-29.png" alt="">
+        </div>
+        <strong>Below is an example of embedding video as well as websites</strong>
+        
+        <br>
+        <div>
+     <iframe src="https://www.bing.com"width="600px" frameborder="0"></iframe>
+    </div>
+     <br>
+     <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ua24185-rcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <br>
+    <hr>
+    <div>
+    <strong>Below is the example of writing text in unordered and ordered list
+    </strong>
+    <ul>
+        <li>Hello</li>
+        <li>Hi !</li>
+        <li>How are you</li>
+        <li>Hola</li>
+        <li>Bonjour</li>
+    </ul>
+    <ol type="I">
+        <li>Hello</li>
+        <li>Hi !</li>
+        <li>How are you</li>
+        <li>Hola</li>
+        <li>Bonjour</li>
+    </ol>
+</div>
+    <br>
+    <div>
+        <strong>Below is an example of making a table</strong>
+        <table border="">
+            <tr>
+                <th>S.N.</th>
+            <th>Name</th>
+            <th>Score</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>HumanOne</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>HumanTwo</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>HumanThree</td>
+                <td>3000</td>
+            </tr>
+            <!-- Inside the table details we can use the colspan tag to make the detail cover more than one column -->
+        </table>
+    </div>
+    <br>
+    <section>
+    <strong id="form"> <u> Below is an example of creating a form</u></strong> <br> <br>
+    <form action="nodejs.js">
+        Enter your name:<input type="text"name="bio"placeholder="Enter your name here"> <br>
+       
+           Select your gender: 
+           <label for="male">
+           <input type="radio" id="male" name="gender">male
+           </label>
+           <label for="female"><input type="radio" name="gender" id="female">female</label>
+           <label for="no">
+           <input type="radio" name="gender"id="no">prefer not to say
+        </label>
+        <br>
+        What food do you prefer? Mark both if you like both. <br>
+        <label for="veg">
+            <input type="checkbox"id=veg>Veg food items
+        </label>
+        <label for="nonveg">
+            <input type="checkbox"id="nonveg">Non-veg food items
+        </label>
+
+        <br>
+        <label for="birthdate">
+            Enter your date of birth:
+            <input type="date">
+        </label> <br>
+        <label for="color">
+            Pick your favourite color: <input type="color">
+        </label>
+        <br>
+        Select your favourite car company:
+        <select name="cars" id="cars">
+            <option value="Not chosen"> Click here to choose</option>
+            <option value="BMW">BMW</option>
+            <option value="Rolls">Rolls Royce</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Audi">Audi</option>
+            <option value="Lexus">Lexus</option>
+            <option value="Jaguar">Jaguar</option>
+            <option value="Buggati">Buggati</option>
+            <option value="RangeRover">Range Rover</option>
+            <option value="Nissan">Nissan</option>
+            <option value="Ferrari">Ferrari</option>
+            <option value="Lambo">Lamborghini</option>
+        </select>
+        <br> <br>
+        <label for="Review" id="help">Enter your experience with our website: <br>
+           <textarea name="Review" id="Review" cols="30" rows="10"></textarea>
+        </label> <br>
+        <button type="submit"> submit</button>
+        <!-- form action link is redirected when the button is pressed -->
+    </form>
+</section>
+    </main>
+    <br><br><br>
+    <footer>
+        <details>
+            <summary> What is this website using only html made?</summary>
+            .. It is made just while practicing the html5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi saepe impedit odit similique necessitatibus quam voluptatibus assumenda numquam quod quaerat perferendis consectetur debitis, minima repellendus, consequuntur id ullam accusamus? Delectus!
+        </details>
+<br> <strong id="contact">
+<a href="https://www.linkedin.com/in/newson-upreti-419471253"target="_blank">Contact me</a> </strong><br> <br>
+
+<a href="#Home">Back to top</a>
+    </footer>
+</body>
+
+</html>

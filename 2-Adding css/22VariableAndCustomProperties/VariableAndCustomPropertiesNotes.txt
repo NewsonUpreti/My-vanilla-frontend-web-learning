@@ -1,0 +1,43 @@
+Notes on variable and custom properties:
+
+.box{
+    --box-color: rgb(123, 123, 255);
+    width: 200px;
+    height: 200px;
+    background-color: var(--box-color);
+    border: 4px solid darkblue;
+    margin: 2px 9px;
+     box-shadow: 4px 4px var(--box-color);
+}
+
+Above given is the local variable only can be used inside the main program or the main styling box where it is declared
+In the above given way, we can declare the variable in css and call them whenever required and also change them all at once using the same variable at multiple places
+But in the above case the --box-color variable only works inside this box and not outside this box when used the same variable.
+
+In order to create the variable that can be used all over the program we need to create a root selector like as given below and that variable can be used or called all over the code in styling
+ :root{
+            --bgcolor: tomato;
+        }
+
+.container
+{
+    display: flex;
+    background-color: var(--bgcolor) ;
+}
+     In this way variable can be made and then called at any point to be declared in the program
+
+for little professional activity, we usually make primary-color, secondary-color, background-color, fontcolor, minwidth, maxwidth height and so on to make code efficient and highly attractive entirely accurate
+below is the way of declaring variable and calling them multiple times to be used within the program
+   :root{
+            --bgcolor: tomato;
+            --maxw: 400px;
+        }
+
+
+
+.container
+{
+    display: flex;
+    background-color: var(--bgcolor) ;
+    max-width: var(--maxw);
+}

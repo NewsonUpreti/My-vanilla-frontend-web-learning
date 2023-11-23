@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and time in JS</title>
+    <style>
+        .container {
+            background-color: purple;
+            border: 8px solid rgb(0, 0, 0);
+            border-radius: 10px;
+            font-size: 30px;
+            font-weight: 800;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        The present time is <span id="present"></span>
+    </div>
+    <script>
+        console.log("This console is based on JavaScript Date and Time");
+        let newDate = new Date();
+        console.log(newDate);
+
+        // let dt = new Date(0); // means 0 seconds from 1970 january 1 5:30 am and Date(1000) means 1 seconds forward from it
+        // console.log(dt);
+
+        // let newDate = new Date("2020-02-04");  //Manually adding date to the variable
+        // console.log(newDate);
+
+        // giving units manually
+        // let unitDate = new Date(year, month, date, hours, minutes, seconds, milliseconds);
+        // let newDate = new Date(2020,0,2,8,30,10,20);  // This is known as the constructor method of adding elements to the code which will work as the present 
+        // console.log(newDate);
+
+        // let yr = newDate.getFullYear()
+        // console.log("This year is "+yr)
+        // let mth = newDate.getMonth()
+        // console.log("This month is "+mth)
+        // let dt = newDate.getDate()
+        // console.log("This Date is "+dt)
+        // let hr = newDate.getHours()
+        // console.log("This Hour is "+hr)
+        // let min = newDate.getMinutes()
+        // console.log("This Minute is "+min)
+        // let sec = newDate.getSeconds()
+        // console.log("This Minute is "+sec);
+
+        // let day = newDate.getDay()
+        // console.log("This day is "+day)
+
+        // newDate.setDate(5);   // setting the date manually just like this we can set months years and hours
+        // console.log(newDate);
+
+        // let from1970 =  Date.now(); // this returns the milliseconds we travelled from Date(0);
+        // console.log(from1970)
+
+        setInterval(now, 1000);
+
+        function now() {
+            present.innerHTML = new Date();
+        }
+  // never create the id and function name with the same name exactly
+    </script>
+</body>
+
+</html>

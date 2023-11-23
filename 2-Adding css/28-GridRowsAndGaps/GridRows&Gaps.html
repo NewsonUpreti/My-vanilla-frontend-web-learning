@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Rows and Gaps</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-rows: 1fr 1fr 4fr ; /* This will be applied to the items by 1:1:4 for 3 items*/
+            grid-auto-rows: 3fr ; /* This will be applied automatically to the remaining row items by :3 ratio*/
+            grid-template-columns: repeat(4, 2fr);
+            grid-gap: 1rem;
+           
+
+        }
+        .box{
+            background-color: aquamarine;
+            border: 2px solid black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">This is box 1</div>
+        <div class="box">This is box 2</div>
+        <div class="box">This is box 3</div>
+        <div class="box">This is box 4</div>
+        <div class="box">This is box 5</div>
+        <div class="box">This is box 6</div>
+        <div class="box">This is box 7</div>
+        <div class="box">This is box 8</div>
+        <div class="box">This is box 9</div>
+        <div class="box">This is box 10</div>
+    </div>
+</body>
+</html>

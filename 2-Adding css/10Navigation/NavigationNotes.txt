@@ -1,0 +1,11 @@
+We can insert the navigation bar inside the nav tag and listing the ul and li list which makes a list of navigations which is recommended to put under the header tag.
+We can remove the list bullets points by using the css which looks like this 
+.navbar li{
+    float: left;
+    list-style: none;
+but when we enter the navbar float to make the navbar in a single row, the lines of navigation will be overflowed from the parent tag and the background won't be visible in our website. We need to do like this to avoid this failure
+.navbar ul{
+    overflow: auto;
+}
+
+We can use padding top bottom left right to the element to make the element perfectly viewed to make an attractive UI

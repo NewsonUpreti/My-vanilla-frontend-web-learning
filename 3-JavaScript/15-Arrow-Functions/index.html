@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow - Functions in JavaScript</title>
+</head>
+
+<body>
+    <div class="container">
+        This is a container .... Arrow functions.
+    </div>
+
+    <script>
+        // function greet()
+        // {
+        //     console.log("Good afternoon");
+        // }
+        // greet()
+
+        // We can replace the above given function by the arrow function.
+
+        let greet = () => {
+            console.log("Good Night");
+        }
+        // greet();
+
+        // setTimeout(() => {
+        //     console.log(" We arrive here with the set timeout function");
+        // }, 3000);
+
+
+        let sum = (a, b) => {
+            return a + b;
+        };
+        // shortcut for the above arrow function code is 
+        let sum2 = (a, b) => a + b;
+        // no need to use () braces when there is a single argument in function but when there is no argument () empty braces should be used
+
+        let a = 2, b = 5;
+        console.log(sum(a, b));
+
+
+
+        // One important way of using the function. where we enter the function inside an object and then we get access to every element inside the object.
+        let group = {
+            greet:"Good Morning ",
+            names: ["json", "louis", "zayn", "niall"],
+            speak() {
+                this.names.forEach((man) => {
+                    console.log(this.greet+" Hello " +man);
+                });
+            }
+        }
+        group.speak();
+        // In the above section we saw the importance of the arrow funciton which have the ability to access the outer key which are inside the object using this.keyname and make the code productive. whereas the direct function func() will access for the elements inside and return undefined if the element is outside the block
+
+
+    </script>
+</body>
+
+</html>

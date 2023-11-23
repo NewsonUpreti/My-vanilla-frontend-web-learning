@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text shadow</title>
+    <style>
+        body{
+            background-color: rgb(12, 38, 41);
+        }
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            border: 3px solid rgb(204, 237, 250);
+            border-radius: 6px;
+            margin: 23px 12px;
+            background-color: rgb(22, 84, 155);
+            /* box-shadow: 4px 5px rgb(194, 158, 152);
+            box-shadow: -4px -5px 4px rgba(20, 13, 12, 0.5);
+            box-shadow: inset 5px 6px red; This is used to apply the shadow internally inside the box */
+            box-shadow: 3px 4px  rgb(224, 13, 13), 8px 9px  rgb(24, 169, 8), 12px 16px  rgb(24, 24, 224);
+        }
+        .card h1{
+            text-shadow: 2.5px 2.5px 4px rgb(111, 177, 210);
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h1>C++ language
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dicta exercitationem adipisci similique explicabo sed debitis accusamus asperiores accusantium cumque culpa voluptates iure sequi molestiae esse vero eos, repellendus eveniet!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h1>Python language</h1> <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iste, dolorem minima praesentium soluta accusantium fugit vel quasi asperiores veritatis nemo a eius deserunt. Repellendus facere totam iusto animi explicabo</p>
+        </div>
+        <div class="card" id="card-3">
+            <h1>JavaScript language</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae officia inventore, neque aliquam sit et porro in doloremque tempore ad, eos tenetur ipsa aperiam nam nemo corrupti, dolores incidunt odit?</p>
+        </div>
+    </div>
+</body>
+
+</html>

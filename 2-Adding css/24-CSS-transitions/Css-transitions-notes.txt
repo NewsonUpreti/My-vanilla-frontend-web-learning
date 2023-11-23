@@ -1,0 +1,27 @@
+applying procedure of transition in CSS
+/* telling the css program that the below property transition is connected */
+    /* transition-property: background-color,color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 2s; */
+
+    /* shorthand for transition is as given below  */
+    transition: all 0.4s ease-in-out 0s;
+
+}
+#box:hover{
+    background-color: rgb(99, 215, 217);
+    color: rgb(0, 0, 0);
+    height: 210px;
+    width: 210px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+#box:active{
+    background-color: rgb(15, 60, 45);
+    color: aliceblue;
+    height: 320px;
+    width: 320px;
+    border-radius: 20px;
+    font-size: 30px;
+}

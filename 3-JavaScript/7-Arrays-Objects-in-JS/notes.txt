@@ -1,0 +1,58 @@
+types of primitive variables.
+  let myVar=12;
+        let myVar2="String";
+        let myvar3=true;
+        let myvar4=null;
+        let myVar5 = undefined; This is the default value of a variable
+
+Anything created except the primitive are known as objects.
+eg: Arrays, objects....
+Example of an object:
+let employee = {
+            name: "string",
+            salary : 10,
+            channel:"codeSon",
+            channel2: "programmingSon",
+        }
+        In the above case, employee is the object which contains all the informations inside the braces {  }
+
+Arrays in JS:
+
+Example of an array:
+let names = [1,2,3,4,"Jason"];
+  where names[0] is 1, names[1] is 2 and so on..
+  Arrays in Js can store any kind of data types like integer, string, boolean, undefined, characters, etc.....
+
+We can also create the array as the new object as given below:
+let names2 = new Array(1,2,3,4,'json',undefined);
+        console.log(names2[4]);
+
+  let names2 = new Array(1,8,90,4,'json',undefined);
+        console.log(names2);  
+        names2 = names2.sort(); // this is the way of sorting an array
+        console.log(names2.length); // this returns the number of elements in the array.
+        console.log(names2);
+
+
+Adding and removing elements in an array.
+ // // Way of adding an element in the array which is already declared
+        // names2.push("This is a pushed element");
+        // console.log(names2);
+
+
+Accessing objects:
+  let employee = {
+            name: "string",
+            salary : 10,
+            channel:"codeSon",
+            channel2: "programmingSon",
+            // If we want add spaces to the variables of the object we need to put the key inside the braces as given below
+            "channel 2": "programmingisimp"
+
+            // In the console to access the above items 
+            // we can type employee.name to access the name because the key 'name' doesn't have any spaces but employee['channel 2'] is recommended to access for any kind of key values.
+
+
+Creating array container:
+ let names = new Array(23,45); This is an array with two elements 23 and 45,
+ let names = new Array(23) is an array which contains 23 elements which is undefined initially until the element is given

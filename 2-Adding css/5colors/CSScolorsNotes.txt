@@ -1,0 +1,6 @@
+Colors in CSS.
+one method is directly adding the selector and adding the color name to it.
+Another method is directly adding color ; rgb(0,0,1); which are rgb colors value.
+And one more method is by adding hexcolor value which looks like 
+color: #ffffff;  
+And the same way of adding colors goes to background color 

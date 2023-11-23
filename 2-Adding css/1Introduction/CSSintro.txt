@@ -1,0 +1,35 @@
+CSS stands for Cascading Style Sheets
+   Css gives style to raw html
+   Css is used to design and provide styles to our web pages
+   Css is used to make website responsive
+   Html makes structure and css takes responsibility of design which we must do with css for betterness of the website where skeleton is built by only html
+
+   CSS syntax:   p { color: blue; }
+    where, p(paragraph) is selector means where to apply, location is provided
+    color(property) = what to apply
+    and blue(value) = how much or what kind of.
+   
+   in order to make the particular paragraph in different property or form of colors or fonts ID and classes and nested tags are used to specify them
+
+Setting multiple properties looks like this:
+   header,p.intro {
+      background-color : red ;
+      border radius : 3px;
+   }
+where, header and p.intro are the group of selectors and remaining codes inside the curly braces is the declaration block
+
+Three ways of adding CSS to the Markup ( html )
+1) Inline css: css is added to the elements directly using the style attribute.
+2) Internal css: css is kept inside the head tags in <style> tags
+3) External css: css is kept separately inside the .css style sheet
+
+1) Inline css means adding the styling inside the html p like tags and it'll create a design, which is not recommended.
+
+2) Internal css means adding style tag by removing markup and adding head in place of it where all the css are included. where markup and styling will separated in the same file right.
+eg. <style> tag.
+
+3) External css: which is a separate .css styling file for bigger web.
+  step1: write css in .css file
+  step2:include that css file to markup.
+
+Inside the head tag the external or internal css written lately will take more order than the one which is written first for the same style to the same content... but if we write the !important inside the design like color before semicolon the color will be 100% applied to that content

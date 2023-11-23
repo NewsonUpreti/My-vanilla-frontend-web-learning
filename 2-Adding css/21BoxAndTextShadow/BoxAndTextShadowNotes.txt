@@ -1,0 +1,17 @@
+Box shadow and text shadow notes:
+
+box-shadow: 4px 5px rgb(194, 158, 152);   -- 
+-- above method will add the shadow to the x and y axis that is right and bottom specially
+box-shadow: -4px -5px rgb(194, 158, 152);
+-- above method will add the shadow to -x and -y axis that is left and top specially
+
+box-shadow: 4px 5px 10px green;
+in the above style the 10 px is blur radius which means the more the blur value, the more that colour will blurred
+
+box-shadow: 4px 5px 10px 5px green;
+in the above style the 5px is spread radius which means the more the spread value, the more that colour will spread around densely
+
+same like box-shadow given above if we want to put the shadow inside the box instead of outside the border we can use the tag like this
+box-shadow: inset 2px 3px red;
+
+same like box shadow shadow can be given to the texts with the but spreading is not valid in text shadow but blur is valid in text

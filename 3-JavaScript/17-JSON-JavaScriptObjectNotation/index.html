@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JSON - Tutorial</title>
+</head>
+<body>
+    <!-- JSON stands for JavaScript Object Model which is used in transportation of the data -->
+    <!-- It is a notation which helps the JavaScript to transport the data efficiently through the network  -->
+    <div class="container">
+        This is HTML div
+    </div>
+
+
+
+
+    <script>
+        let jsonObj = {
+            name:"Jason",
+            channel : " NNN",
+            friend : "LANA",
+            food : "Potato" 
+        }
+        console.log(jsonObj);
+        // above was the normal object printed to the console, but whenever we want to stringify(converting to string) the object using the JSON which helps in complex objects well. as below is the example..
+
+        let myJsonStr = JSON.stringify(jsonObj); // way of converting an object to the valid JSON string
+        console.log(myJsonStr);
+
+        // updating by replacing the content of the object after converting the object to the string.
+
+        myJsonStr = myJsonStr.replace("Jason","SUN");
+        console.log(myJsonStr);
+
+
+        // parse only takes a valid JSON String...
+        let newJsonObj = JSON.parse(myJsonStr); // Way of converting a valid Json string to an object.
+        console.log(newJsonObj)
+    </script>
+</body>
+</html>

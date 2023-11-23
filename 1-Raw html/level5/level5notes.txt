@@ -1,0 +1,17 @@
+In level 5, We are going to talk about the (SEO) Search Engine Optimization
+We need to make the topics and content relevant and relevance will make the SEO better.
+On page SEO: done with html code
+Off page SEO: which means what is being searched or viewed in the search engine by heavy number of peoples which is also called trending 
+
+How to make SEO better from html
+-- set the title better and good
+-- set the meta tag and put the description and what is the content about 
+  e.g.: <meta name="description" content= "content type and relevant name to it" >
+
+-- set the meta keyword tag
+-- set the meta author tag
+-- set a favicon and link the favicon with the link favicon tag
+-- compress images and other resources without losing much quality while using the image with the small sizes most of the time 
+-- use minify the css and js to make the web work by removing unnecessary spaces and other useless codes that has no role 
+-- remove all unused html css and js
+-- add alt texts to images, whenever the image or content can't be loaded, it is very useful 

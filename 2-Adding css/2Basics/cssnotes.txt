@@ -1,0 +1,16 @@
+Selectors in css:
+ CSS selectors are used to find the element whose property will be set.
+Selectors are used to target the html elements
+Selectors make it easy for us to easily target single/multiple HTML elements in the markup
+
+Types of selectors:
+-- element selector
+-- id selector
+-- class selector
+-- the CSS grouping selector
+
+if the class is blue we add css by name .blue and design over it and if the id is blue we add css by #blue and apply design where Id is specially used for single elements whereas class is for multiple elements like stuffs
+in the grouping selector we use comma and add all selectors name like span,footer and apply design in it 
+
+
+In order to add the comments in css, /* comments here */

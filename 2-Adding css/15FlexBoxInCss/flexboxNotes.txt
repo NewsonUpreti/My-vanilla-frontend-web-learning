@@ -1,0 +1,51 @@
+Flexbox:
+--flexbox is a one-dimensional layout method for laying out items in rows or columns.
+--CSS flexbox is a better way to align items into a container
+--Flexbox = flexible + box
+
+flexbox is inbuilt in CSS designing for the better way to align items in a container in order to make the convenience.
+
+when we use the flex to a container we can use display:flex to the container 
+
+when we complete making our container as the flex container we can start using the flex properties which are really and impressive property of CSS.
+
+Flex-properties for flex-container
+        Flex direction
+--flex direction: row ; this is the default direction of the flexbox and no changes can be seen
+--flex direction: column makes the item stack in a columns
+--flex direction: row reverse makes the item to be arranged in a row like default but starts arranging in the opposite direction and same for the column one.
+
+We can wrap the contents inside the flexbox using the flex-wrap : wrap;
+the default value of the flex-wrap is no-wrap which will adjust the items to the container line by line according to the width of the screen.
+we can also wrap reverse, In this case contents will be oppositely wrapped and gets arranged
+
+we can use the shorthand flex-flow to arrange the flex-direction and the flex-wrap at the same time like this as given below:
+flex-flow: row-reverse wrap;
+
+/* after including the website inside the flex property we can jusify the contents inside the container by using the tag which looks like this 
+           justify-content: center;  */
+           and also if we use justify-content: space-between; then spaces will be created equally between the items and space-evenly will create spaces on bot sides of all the items even starting and ends of the items
+
+next we have align items property which will align the items.
+as in the program done we can vertically align the items with the align items property which looks like this;
+align-items : center;
+align-items : flex-start; is the default value of the aligning in the flex
+align-items flex-end we can use to align the items from the end towards the front..
+
+
+
+Now we are going to see the flex properties for the flex-items
+for any item whenever we declare the order which seems like this 
+order: 2;
+the higher the order the end it will be at.
+for example: Among 20 items, item 1 have order 2 and item 5 have order 3 then it will be arranged like item 5, item1, item 2 ,item3 ,++ in order which means whenever we declare the order. Default value of the order is zero.
+
+the higher the value the faster or actively the item will grow or sink using the flex properties called flex-grow and flex shrink in which negative values are invalid in this case
+
+
+flex-basis: 320px;
+            when flex-direction is set to row then the flex basis will control the width whereas if the flex-direction is set to column then the flex basis will control the height of the styled item
+
+
+Another impressive thing in the flex property goes like this
+align-self: flex-end; In this case the item will go at the end of the container inside the flexbox and if we put it to flex-start then it will be shown in the starting of the flex at its initial position. and we can also align it to the center position  which is exactly between the flex-start and the flex-end

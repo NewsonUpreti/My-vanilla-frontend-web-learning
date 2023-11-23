@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        .container {
+            font-family: 'baloo bhai 2',cursive !important;
+            
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+        #navbar{
+            /* margin: auto; */
+            grid-area: navbar;
+        }
+        #aside
+        {
+            grid-area: aside;
+            /* margin: auto; */
+        }
+        #section{
+            grid-area: section;
+            /* margin: auto; */
+        }
+        #section h1{
+            grid-area: section;
+            /* margin: auto; */
+        }
+
+
+        @media (min-width:0px) and (max-width:800px) {
+            body {
+
+                background-color: rgb(0, 0, 0);
+                color: antiquewhite;
+               
+
+            }
+            .container{
+                grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+            aside{ display: none;}
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media(min-width:800px) and (max-width:1300px) {
+            body {
+
+                background-color: black;
+                color: white;
+            }
+            .container{
+                grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+        }
+
+        @media(min-width:1300px) {
+            body {
+
+                background-color: black;
+                color: whitesmoke;
+            }
+            .container{
+                grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+
+        }
+       
+
+        .borders  {
+            /* border: 2px solid black; */
+            padding: 12px;
+            margin: auto;
+            /* background-color: bisque; */
+        }
+        .borders span{
+            /* border: 2px solid black; */
+            padding: 12px;
+            /* background-color: bisque; */
+        }
+        .borders h2{
+            /* border: 2px solid black; */
+            padding: 12px;
+            
+            
+            text-align: center;
+            /* background-color: bisque; */
+        }
+        footer{
+            text-align: center;
+            position: absolute;
+            width: 96%;
+            bottom: 0;
+            left: 0;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="borders" id="navbar">
+           
+            <span>Home</span><span>About</span><span>Services</span><span>Contact Us</span>
+        </nav>
+        <section class="borders" id="section">
+            <h2>Learn CSS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam odio earum nisi! Fugit architecto esse nesciunt! Tempore quidem a explicabo exercitationem voluptas qui nostrum, fuga accusamus quod? Ab veritatis culpa ipsum repudiandae minus enim corrupti deleniti eos fugiat, aliquam ipsa iusto laudantium dolor ut cumque. Soluta at ut illo accusamus exercitationem ex excepturi illum ab assumenda velit expedita numquam deserunt labore nobis odio modi voluptates ad adipisci autem quaerat mollitia accusantium laudantium, atque nostrum. Dicta modi expedita saepe cupiditate eveniet pariatur, iusto at magnam hic laudantium ullam quaerat temporibus veniam illo vel nulla itaque eum fugit ipsum quia odio! Quia.</p>
+        </section>
+        <aside class="borders" id="aside">
+            <h1>More about us</h1>
+        </aside>
+    </div>
+    <footer class="borders">
+        copyright &copy; newsoncode 2022
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Flexbox</title>
+    <style>
+        .container {
+            height: 540px;
+            width: 100%;
+            border: 2px solid black;
+            /* below is the way to initialize the container as a flex box */
+            display: flex;
+
+            /* Flex properties for a flex container */
+            /* flex-direction: row; this is the default direction as a row and no changes can be seen in the container */
+            /* So we are going to use flex-direction as column and check what will happen  */
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+            /* In the above case the code written later will overwrite the previous ones */
+
+            /* flex-wrap: wrap;    ---This wrap property of flex will wrap the content according to the size of the screen to be arranged in a proper rows and columns 
+           and wrap-reverse is also used if required in order to make the web formatted properly */
+
+            /* shorthand for the flex-direction and the flex-wrap is given below */
+
+            /* flex-flow: row wrap; */
+
+            /* after including the website inside the flex property we can jusify the contents inside the container by using the tag which looks like this 
+           justify-content: center;  */
+            /* justify-content: center; */
+            /* this will align the items to the center of the container and It works in the horizontal order*/
+            /* justify-content: space-between; */
+            /* this will create spaces only between items and not on the sides of starting and ending items*/
+            /* justify-content: space-evenly; */
+            /* This will create spaces equally between all items including starting and end item starting side and ending side*/
+            /* justify-content: space-around; */
+            /* This will create space around the content and all the contents have their own spaces around doesn't overlap with the other one as you can see in the web how it works*/
+
+            /* align-items: center;
+            align-items: flex-end;
+            align-items: flex-start;
+            this is the default value of this property 
+            align-items: stretch; */
+
+        }
+
+        .item {
+
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid blue;
+            margin: 10px;
+            padding: 7px;
+        }
+
+        /* #item1 {
+            /* Flex properties for a flex item */
+            /* order: 1;  */
+            /* flex-grow: 4;
+            flex-shrink:2; */
+            /* these properties are made to be used only for the particular item to make the website more better formatted */
+            /* flex-basis: 320px; */
+            /* when flex-direction is set to row then the flex basis will control the width whereas if the flex-direction is set to column then the flex basis will control the height of the styled item */
+
+        /* } */ 
+
+        #item2 {
+            order: 1;
+            /* the higher the order value of the item the later it will be visible or displayed for example 1st item have higher order than it will be seen at the place of last item. default value is 0 */
+
+            /* flex-grow: 3; */
+            /* It will help the item grow horizontally , those items which have higher flex grow value the larger it will grow than the other one. Negative values are invalid in this case unlike z-index */
+        }
+
+        #item3 {
+            align-self: flex-start;
+            align-self: flex-end;
+          align-self: center;
+          /* flex: 2 3 230px;    
+            --- This is the shorthand for the flex in which the first 2 is flex grow the second one is flex-shrink and the last one is flex-basis */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is flexbox web</h1>
+    <div class="container">
+        <div class="item" id="item1">First box</div>
+        <div class="item" id="item2">Second box</div>
+        <div class="item" id="item3">Third box</div>
+        <!-- <div class="item" id="item4">Fourth box</div> -->
+        <div class="item" id="item5">Fifth box</div>
+        <div class="item" id="item6">Sixth box</div> 
+
+    </div>
+
+</body>
+
+</html>

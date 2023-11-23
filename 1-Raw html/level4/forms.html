@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div>
+            <h1>Travel form for a College trip using html only(No designs)</h1>
+            <hr>
+            <form action="form.php">Your full name:
+
+                <input name="personalinfo" type="text" placeholder="Enter your name here">
+                <br><br>
+                Your Course: <select name="course" id="course">
+                    <option value="Select Your course">select your course</option>
+                    <option value="BCA">BCA</option>
+                    <option value="BBA">BBA</option>
+                    <option value="Bcom">Bcom</option>
+                </select>
+                <br><br>
+                Select your section:
+                <label for="sectionida">
+                    <input type="radio" value="section a" name="section" id=sectionida>Section A
+                </label>
+                <label for="sectionidb">
+                    <input type="radio" value="section b" name="section" id=sectionidb>Section B
+                </label>
+                <label for="sectionidc">
+                    <input type="radio" name="section" id="sectionidc" value="section c">Section C
+                </label>
+                <br><br>
+                What food item do you prefer?(Mark both If you like both) <br>
+                <label for="foodcanteenveg">
+                    <input type="checkbox" name="want food canteen card" id="foodcanteenveg" class="foodItems">Veg
+                </label>
+                <label for="foodcanteennonveg">
+                    <input type="checkbox" name="want food canteen card" id="foodcanteennonveg" class="foodItems">
+                    Non-Veg
+                </label>
+                <br>
+            </form>
+        </div>
+        <div>
+            <form action="form.sql">
+                <span>Pick your favourite color:</span>
+
+                <input type="color">
+                <br><br>
+                Enter your date of birth: <input type="date">
+                <br> <br>
+                Enter your email address: <br> <input type="email">
+                <br>
+                <br>
+                What kind of smartphone do you own ? <br>
+                <select name="smartphones" id="smartphones">
+                    <option value="No-smartphones">Select Your smartphone type</option>
+                    <option value="Iphone">IOS</option>
+                    <option value="Android">Android</option>
+                    <option value="Keypad">Keypad phone</option>
+                    <option value="none">None of these</option>
+                </select>
+                <br>
+                <br>
+                <textarea name="review" id="userreview" cols="30" rows="10"
+                    placeholder="Write your review here"></textarea>
+            </form>
+        </div>
+        <input type="button" value="submit">
+    </main>
+    <footer></footer>
+</body>
+
+</html>

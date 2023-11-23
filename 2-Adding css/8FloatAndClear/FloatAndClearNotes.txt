@@ -1,0 +1,9 @@
+Alignment is basically focused this time in this web dev learning
+Whenever we consider the margin auto it will take both left and right similar and same space
+
+inside the styling we can float the elements which will make the element gets floated in the provided direction
+
+clear-left and clear right or clear top and bottom and clear both is used for the element to get away from the box or elements which is overlapping the side which is disturbed is cleared 
+
+text tag is used to align the texts like text-align and so on
+make projects boxes and details to properly understand concept upto here...

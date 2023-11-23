@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-selectors</title>
+    <style>
+        h1 {
+            background-color: rgb(27, 58, 47);
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            text-align: center;
+        }
+
+        div p {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* In the above case, the entire paragraphs directly or indirectly but inside the div will be customised as the given above css  */
+        div li p{
+            color: lightcoral;
+            background-color: black;
+            font-weight: normal;
+        }
+        /* In the above case the css will be applied to only the paragraph of the li inside the div tag and  */
+
+        div + p{
+            background-color: aquamarine;
+            color: black;
+            /* In this case, the CSS is applied to the paragraph whose last sibling is div, for example html is the parent and body is the sibling of the head*/
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Selectors++ in CSS</h1>
+    <p>This is a paragraph starting the body contents</p>
+    <div class="container">
+        <div class="row">
+            <p>Paragraph display inside row</p>
+
+            <ul>
+                <li>
+                    <p>Paragraph display inside the li tag</p>
+                </li>
+            </ul>
+
+
+        </div>
+        <p>Paragraph-2 display inside container</p>
+    </div>
+    <p>Paragraph-3 display inside the body directly</p>
+    <br>
+    <br>
+    <br>
+    <div class="para">
+        <p> This is 2nd phase of paragraph</p>
+
+    </div>
+    <p> This is standalone paragraph</p>
+    <p>This is second standalone paragraph</p>
+
+    <!-- In the above case if we do the styling to the div p{} then the paragraph outside the div won't be modified or customized as the one inside the div do -->
+</body>
+
+</html>

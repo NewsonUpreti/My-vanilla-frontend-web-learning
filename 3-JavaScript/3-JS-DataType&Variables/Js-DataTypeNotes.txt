@@ -1,0 +1,22 @@
+Initializing variables:
+variable declaration using dynamic typing(no need to give the type)
+var a = 20;
+var b = " newson"
+
+Operators in JS:
+1) Unary Operator- It has single operand (-8), or (x = -x)
+2) Binary Operator.
+   Operands - Entities in which Operator operates.
+
+In 2+5, 2 and 3 are operands and + is the Operator
+
+Binary operators:
+-- It has two operands (a+b) or(x = x+6)
+
+
+same as java concatenating to print..
+    var num1 = 20;
+        var num2 = 30;
+        console.log(" The sum of num1 and num2 is "+(num1+num2));
+        num1 ** num2 gives value of 20 to the power 30. 
+        increment and decrement same as c and java.

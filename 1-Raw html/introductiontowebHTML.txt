@@ -1,0 +1,54 @@
+HTML -- BODY / FRAMES
+CSS -- BEAUTY / COLORS AND MODIFICATION
+JAVASCRIPT -- BRAIN / ENGINE AND FUNCTIONALITIES
+
+we use title and meta tags inside the head tag and also we use to link the css code within the head tag 
+
+meta tag is used for adding different keywords and make the web SEO compatible like meta name="keywords" "robots" description" etc....
+
+so how can we add css to the website..
+just like adding the favicon by linking it inside the head tag and using the <link> tag 
+we can add css using the link tag which seems just like <link rel="stylesheet" href="codefilename.css">
+we can add external java script in our website using the script tag which looks like this
+
+inline and block elements 
+<p> paragraph is a block element which covers all the width and the following contents will be shown below 
+<span> whereas <span> which is a inline element which covers only the space which it needs and the following content or the tag will follow as soon as it ends
+inside the paragraph or span or div tag we can also use the style text to include border and colors like stuffs but is not recommended in the html but in css
+
+in order the bring the content in the same line we must use inline elements tag or we need to use the css to format and make them in a single line 
+
+em tag emphasize the word inside it and gives the specification to it and then makes it slightly italic
+
+ids and classes are used in many tags are used very frequently 
+id can't be repeated but classes can be repeated for various tags just like students id and class id is the identifier and class means which group or kind it belongs to.
+with the help of id and class we can tell the css or js to take action to the particular id or the bunch of class like styles design colours and action to that class and id which is really needed to create a website and without repititive use of styling we can do it using class reducing the code length and saving time. we can use many classes name like redbackground class black border class by using spaces
+
+shortcuts for id and class
+we can type span.redbg to create span of redbg class
+we can also type span#newson to create span that have id newson
+In the above method   . is for class and # is for id
+
+We are able to target the classes and id to change their style and fonts in a group or a particular one as per need 
+
+
+
+Html entities:
+    It is used to make the html file or web to recognize that the spaces between the words is pressed by the user and it is to be used as spaces multiplied.
+ <h3>Below are examples of using an entity</h3>
+    <!-- the &nbsp; creates multiple amount of spaces anywhere we use it  but receommended not to use with the html -->
+    <p> initial word &nbsp; final word</p>
+    <!-- we use pre tag to print the exact symbols and tags and spaces as typed by the user -->
+    <!-- we can use &lt; and &gt; to print the tag lower than and greater than inside the print tag -->
+    <p>paragraph tag is written like this &lt;p&gt;</p>
+    <p>pound is written like this &pound</p>
+    <p>copyright is written like this &copy;</p>
+    <p>Empty character is written like this &#8203;</p>
+    <p>fraction is written like this &frac14</p>
+    <p>arrows are written like &rarr; &larr; &uarr; &darr;</p>
+    <!-- to explore more we should see html entities reference -->
+
+
+
+    html semantics : header main footer nav aside are known as semantics as simple as it is but it's very important while creating an effective and good website. 
+    if we use details tag and summary tag inside it. we can enlarge and shrink the contents in the summary

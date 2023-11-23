@@ -1,0 +1,325 @@
+/* first of all CSS reset always */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS-variables */
+/* :root{
+    --navbar-height: 60px;
+} */
+
+/* Navigation bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* margin-bottom: 30px; */
+    
+   
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navbar: Logo and image modification */
+/* Navbar: List styling */
+
+#logo{
+    /* margin: 1px 1px; */
+
+}
+#logo img{
+    height: 80px;
+    margin: 30px 40px;
+    z-index: 100;
+   
+
+}
+/* Navbar: Now lets style the list */
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+  
+    
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5em;
+    
+    
+}
+
+#navbar ul li a{
+    color: white;
+    display: flex000000;
+    padding: 3px 16px; /* we are giving the padding to only this item because whenever we put the hover effect then the hover will affect only a material or single a item*/
+    text-decoration: none;
+    z-index: 100;
+   
+
+}
+#navbar ul li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255,0.5);
+    border-radius: 20px;
+   
+}
+
+
+/* Home section styling
+ */
+
+ #home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 180px;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    /* margin-bottom: 220px; */
+    
+ }
+
+ #home::before{
+    content: "";
+    background: url('../foodbg.jpg') no-repeat center center/cover;
+    
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.95;
+    top: 0px;
+    left: 0px;
+}
+
+/* Services Section */
+/* .services-container{ */
+    /* background-image: linear-gradient(rgb(194, 181, 181),rgb(13, 55, 83));
+    border-radius: 30px; */
+/* } */
+#services{
+    margin: 34px;
+    display: flex;
+    /* position: relative; */
+
+}
+#services .box{
+    border: 4px solid rgb(47, 6, 6);
+    padding: 8px;
+    margin: 25px;
+    border-radius: 28px;
+    background-color: rgb(233, 228, 228);
+    box-shadow: inset 2px 3px 8px 8px rgb(120, 120, 120);
+    
+
+}
+/* #services .box:hover{
+    border: 4px solid rgb(47, 6, 6);
+    padding: 8px;
+    margin: 25px;
+    border-radius: 28px;
+    background-color: rgb(147, 147, 147);
+    box-shadow: inset 2px 3px 8px 8px rgb(209, 209, 209);
+    
+
+} */
+#services .box img{
+    height: 200px;
+    display: block;
+    margin: auto; /* Note:  This will work only if the display is block*/
+}
+#services .box p{
+    font-family: 'baloo bhai 2',cursive;
+    font-size: 1.2rem;
+}
+
+#services{}
+
+
+/* Our Sponsors and Clients section */
+#client-section{
+    position: relative;
+    height: 400px;
+    z-index: -2;
+}
+#client-section::before{
+content: "";
+position: absolute;
+background: url(../bulb.jpeg) no-repeat center center/cover;
+width: 100%;
+height: 100%;
+z-index: -3;
+opacity: 0.5;
+
+}
+
+
+.clients{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.client-item{
+    padding: 34px;
+}
+.client-item img{
+    height: 60px;
+    /* margin: 34px; */
+    padding: 34px;
+    z-index: -1;
+    display: inline-block;
+    flex-direction: row;
+}
+
+/* Contact-section begins now  */
+#contact{
+    position: relative;
+    z-index: -3;
+    /* height: 50%; */
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width:100%;
+    height:100%;
+    z-index: -4;
+    opacity: 0.8;
+    background:url(../contact.jpg) no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+   
+
+}
+
+#contact-box textarea{
+    margin-bottom: 20px;
+}
+#contact-box form{
+    width: 80%;
+    max-width: 500px;
+    z-index: -2;
+  
+}
+#contact-box label{
+    font-size: 1.5rem;
+    font-family: 'baloo bhai 2';
+    z-index: -3;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding:10px 20px ;
+    display: block;
+    margin: auto;
+    height: 12px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+}
+
+/* Utility classes
+ creating similar classes for headings to make the headings similar all over the project without needing to write multiple times */
+.h-primary{
+    font-size: 4rem;
+    padding: 12px;
+    font-family: 'baloo bhai 2', cursive;
+}
+.h-secondary{
+    font-size: 2.5rem;
+    padding: 10px;
+    font-family: 'baloo bhai 2', cursive;
+
+}
+
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+p,h1{
+    font-family: 'baloo bhai 2', cursive;
+}
+
+.btn{
+    padding: 8px 20px;
+    border: 3px solid white;
+    background-color: rgba(84, 9, 9,0.7);
+    color: white;
+    border-radius: 12px;
+    margin: 18px;
+    font-size: 1.5rem;
+    font-family: 'baloo bhai 2';
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+}
+.center{
+    text-align: center;
+}
+.btn2{
+    display: flex;
+    font-size: 1.4rem;
+    color: rgb(21, 20, 20);
+    padding: 3px 5px;
+    border: 3px solid rgb(122, 122, 122);
+    border-radius: 8px;
+    align-items: center;
+    margin-left: 40%;
+    margin-bottom: 40px;
+  
+    justify-content: center;
+    font-family: 'baloo bhai 2',cursive;
+}
+
+
+
+
+
+
+ 

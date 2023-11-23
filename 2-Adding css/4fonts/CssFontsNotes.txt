@@ -1,0 +1,15 @@
+From the style we can just choose like color and background color. We need to choose font style family color spacing and so on.
+
+We also have web safe fonts which is inbuilt in the operating system.
+so that we are able to use the websafe fonts...
+If the font is not in our system then we cannot use that font normally.
+In this case we can use the font stack in order to avoid failure by providing the multiple kind of fonts, the one that is available to be used will be applied 
+and then we have the web fonts which is to be imported from the website any kind of font we like can be imported from the web.
+
+CSS font stack is the recommended website for importing web safe fonts. whereas for the web fonts we can go to google fonts or any domain you like to import them to our website. we need to paste the link in our header and then put the font family in the style tag to different areas within the web we build 
+font size can be made manually
+
+Line height can be made to make spaces between lines in a paragraph specially if font-size='2px';   line-height is in em like 3.3em;
+
+font-weight means bold or light
+font-style is also used.

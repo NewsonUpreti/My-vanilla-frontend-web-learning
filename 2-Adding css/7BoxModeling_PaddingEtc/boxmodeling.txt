@@ -1,0 +1,32 @@
+Box model:
+Very important in designing any kind of web using any framework.
+most internal is element we define. which is covered with padding and border covers the padding and margin covers border,
+
+background color: as done in the previous lessons. border also as done in the previous lessons
+Padding shrinks the content internally,
+Margin makes the spaces outside the border
+We can also do padding and margin from top bottom left and right.
+
+ /* We can set padding from top, bottom left and right like this */
+    /* padding-left: 30;
+    padding-right: 23;
+    padding-top: 12;
+    padding-bottom: 45; */
+
+    /* If we write paddding = 23px 34px 12px 87px it belongs to top right bottom and left trbl format */
+}
+And same goes for the margin editing
+
+If we want padding for top and left same and then bottom and right same we can write like this padding : 23px 34px; which changes the vertical and horizontal.
+
+But width is considered with margin padding and border which means changing the padding will change the width of the box. So. In order to make the box stable shape we can use the box sizing method which we add to the element which looks like box-sizing: border-box;
+
+We also have the universal selector which looks like this:
+Inside the style: if we type:
+*{
+    box-sizing: border-box;
+    margin: 0;
+    pading: 0;
+    margin and padding will remain constant until we overwrite them in the following code
+}
+We can also choose body selector and edit the background color of the body.

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <div id="main" class="container">
+       
+        <ul id="nav">
+            <li>Home</li>
+            <li>Contact</li>
+            <li>Services</li>
+            <li>More</li>
+            <li>About</li>
+        </ul>
+    </div>
+    <div class="container">
+        This is another container 
+    </div>
+
+
+
+
+</body>
+
+
+<Script>
+    //Everything inside the body tag is known as DOM and controlling as well as them through the JS is known as DOM manipulation
+    let main = document.getElementById('main');
+    // instead of using the above code, we can also use query selector and follow the css method to select the html
+    let list = document.querySelectorAll('#nav>li');
+    list[1].innerHTML = " Contact is replaced";
+
+
+    // in the above code we accessed the html element with id="main"
+    console.log(main);
+    let nav=document.getElementById('nav');
+    console.log(nav);
+    let containers =document.getElementsByClassName('container');
+    console.log(containers);
+    // using the class name will make a collection of html elements
+    
+
+    // by using the css selectors also we can access the html and control them as given below...
+    let selector = document.querySelector('.container');
+    console.log("selector returns ", selector);  // by using the css like selectors the program returns the first matching content
+    let selector2 = document.querySelectorAll('nav>li');
+    console.log("selector returns ", selector2);  // by using this method of query selectors which is css like selectors the program returns all the matching content
+
+</Script>
+</html>

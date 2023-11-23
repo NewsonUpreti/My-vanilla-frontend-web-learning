@@ -1,0 +1,48 @@
+JavaScript Intro:
+ --JavaScript is a client side scripting language.(Adding logic and actions to the initial webpage). eg: clicking submit button will submit the form 
+ --It is used to make web pages alive.
+ --It is used to programmatically perform action within the page.
+ --When JavaScript was created, It was initially called "LiveScript".
+ --But java was a very popular language at that time, so it was decided that positioning a language as a "younger brother" of java would help.
+
+ ajax sequel: a synchronous JavaScript and xml.( It is used to change the webpage dynamically without reloading ) 
+
+ DOM: Document Object Model.
+( Our page is presented as a DOM( html css everything is in DOM))
+
+JavaScript usage:
+ --JavaScript can execute not only on the browser, but also on the server.
+ --We will use JavaScript as a client as well as server side language.
+ --JavaScript has evolved greatly as a language and now used to perform wide variety of tasks.
+
+ What can in-browser JS do?
+   --It is safe and can't access low level of system.
+   --Browser runs the JS code of the website.
+1) Add new html and change existing html from DOM.
+2) React to users Event/ response from server.
+3) Ajax requests: browser will listen to ajax request and populate contents in the DOM that comes from the network as and when required.
+4) Get and set cookies: Save progress made in the browser and authenticate next time . And use local storage to save the information done by the user or the client.
+
+What can't in-browser JavaScript do?
+-- Read/write to/from computer hard disk. But only works after getting the permission.
+-- Browser works on same origin policy. and cannot access the cross site websites with ajax. But with handshake from both side it'll be possible, or we will get the error or same origin policy. So that in-browser JS is safe. 
+  
+
+What makes JS unique?
+-- HTML/CSS integration or full support.
+-- Simple things/Simple API.
+-- Supports Major/Modern browser (Enabled by default)
+
+JavaScript Versions:
+-- Maintained by the JS community.
+-- ES(EcmaScript) ( since 1997) is a scripting standard that pushes new features to JS.
+  JS first version- 1997
+  second - 1998
+  third - 1999
+  2015 - ECMA
+  2016 - ECMA
+  2017 - ECMA
+  2018 - ECMA
+  ...
+  .......
+  and changes every year.

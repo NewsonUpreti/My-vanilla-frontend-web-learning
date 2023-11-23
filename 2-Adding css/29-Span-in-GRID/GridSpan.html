@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Spanning in Grid</title>
+    <style>
+        body{
+            background-color: skyblue;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows:repeat(4,1fr) ;
+            /* grid-row-gap: 1rem;
+            grid-column-gap: 2rem ; */
+            grid-gap: 2rem;
+            font-weight: 800;
+            letter-spacing: 0.1rem;
+        }
+.box{
+    border: 2px solid rgba(98, 206, 194,0.5);
+    background-image: linear-gradient(black,rgb(14, 46, 59));
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 8px 0px 90px 10px rgba(0,0,0, 0.9) ;
+ animation: boxes 2s 0s infinite ;   
+
+
+}
+@keyframes boxes {
+    /* from{
+        box-shadow:inset 3px 4px 5px 4px black;
+        
+    }
+    to{
+        box-shadow:inset -3px -4px 5px 4px black  ;
+    } */
+    
+    25%{
+        box-shadow: 0px -8px 90px 10px rgba(0,0,0, 0.9);
+        
+    }
+    50%{
+        box-shadow: -8px 0px 90px 10px rgba(0,0,0, 0.9) ;
+    }
+    75%{
+        box-shadow: 0px 8px 90px 10px rgba(0,0,0, 0.9);
+        
+        color: white;
+    }
+    100%{
+        box-shadow:  8px 0px 90px 10px rgba(0,0,0, 0.9) ;
+        
+    }
+}
+.box:first-child{
+    /* grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+    /* Shorthand for above procedure */
+    grid-column: 1 / span 3;
+    
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Item-1</div>
+        <div class="box">Item-2</div>
+        <div class="box">Item-3</div>
+        <div class="box">Item-4</div>
+        <div class="box">Item-5</div>
+        <div class="box">Item-6</div>
+        <div class="box">Item-7</div>
+        <div class="box">Item-8</div>
+    </div>
+
+
+</body>
+</html>

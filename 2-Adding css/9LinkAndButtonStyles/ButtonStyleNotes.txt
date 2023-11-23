@@ -1,0 +1,15 @@
+Button style notes:
+pseudo selectors and more designing:
+
+first of all we can provide link and make a button to redirect to a link
+Or we can add button tag and give it some name as well as we can add cursor property pointer with css to make the cursor being seen while taking button to the pointer
+
+pseudo selectors have some transition to our elements like hover which means when our pointer moves to that area what color or effect will appear in that area.
+and we have one more special style like visited which will bring change in the link which is already visited by the individual or the user.
+
+a: hover means when the pointer is overlapping the a element the effect or style will be shown. We can also add the border when hovered 
+
+a: visited means the effect will be applied when the user visit that link once
+
+a: active means when the button is really clicked by the user the effect will take place
+

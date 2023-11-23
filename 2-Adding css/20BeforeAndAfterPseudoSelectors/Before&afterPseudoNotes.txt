@@ -1,0 +1,33 @@
+Before and after pseudo selectors notes:
+
+  /* section::before {
+            content: "This is a content using section before in css"
+        }
+
+        section::after {
+            content: " This is a content using section after in css"
+        } */
+
+The content will be displayed before and after of the given related content.
+
+
+ header::before{
+            background: url('https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80') no-repeat center center/cover;
+            content:"" ;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+            opacity: 0.5;
+
+            /*The background image is used in header before in place of using it in body because it makes us able to modify the opacity and positioning of the image separately without harming the positions of the texts and other contents */
+
+
+
+        }
+
+
+Points to be noted: Before and after PseudoSelectors is a very important tag to be used in professional css designing and developing the websites.

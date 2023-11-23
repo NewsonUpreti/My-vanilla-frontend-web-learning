@@ -1,0 +1,7 @@
+just like transition and animation 
+transform works but transform will change the position or apply once the action is made like hover or click or any other stuffs. A simple code to transform is given below
+transform: scale(2); will grow the size of the item by 2x 
+transform: skew(30deg); will tilt the item by given degree 
+transform: rotate(30deg); will rotate the item by given degree 
+transform: translateX(40px); will slide the item by 40 px horizontally
+

@@ -1,0 +1,22 @@
+html is the father of head and body and head and body are siblings
+
+tag
+ is like a container which contains the content or other tags inside it
+
+<h> tag 
+ is the heading and <h1> creates the bigger heading <h2> creates the smaller and so on 3 4 5 and we can write our content inside the heading tag
+
+<p> tag
+ can take the paragraph and write long paragraph contents inside it 
+<hr> tag creates a horizontal line in the page 
+
+responsiveness is the key trick to make the website succesful in the present days i.e. making the web properly rendered and user friendly in mobile phones tablets and all devices.
+
+
+<name> is opening tag and </name> is closing tag
+
+<!-- text and notes here --> is comment tag 
+
+compile run or execute is called parse popularly in the web development
+
+html is case insensitive langauge which means that the html and HTML have no difference while programming 

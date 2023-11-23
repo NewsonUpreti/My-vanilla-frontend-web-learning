@@ -1,0 +1,6 @@
+grid-template-rows: 1fr 1fr 4fr ;
+This will make the items distributed in the ratio given in the row.
+and the adding the below property
+grid-auto-rows: 3fr; will be applied to the remaining items where the given rows did not reach.
+ 
+ grid-template-columns: repeat(4, 2fr); This is the way of repeating the grid ..

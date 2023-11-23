@@ -1,0 +1,13 @@
+In this level, We are going to study about positioning in css.
+If we give the position to any class or and ID static with css, It doesn't make any differences because the default positioning is static.
+
+Positions in css:
+static(default)
+
+absolute: If we put the absolute positioning the position will be applied related to the parent and not from its own position
+
+relative: relative means relative to its normal position, if we give top 20px it will slide 20 px from top and same for left right and bottom. It will create gap/spacing to its normal position 
+
+fixed: If we keep the position fixed then the position of the box or the content will remain fixed at the same place even if we scroll the webpage
+
+sticky: which makes the box or the content get stick all the time in the browser like a facebook navigation bar which is seen all the time but it takes space unlike fixed fixed moves overlapping everything but sticky is sticked all the time in that place we keep it.

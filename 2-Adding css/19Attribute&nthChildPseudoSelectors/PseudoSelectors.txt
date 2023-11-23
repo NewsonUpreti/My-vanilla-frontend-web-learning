@@ -1,0 +1,45 @@
+while using css...
+  <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="submit">
+In the above given html, if we just want to apply styles to the input whose type is text, the we use this pseudo selector feature which is given below..
+input[type='text']{
+    styling here like padding border width 
+}
+
+for those whose target is set in an attribute should be styled like this :
+a[target] {
+    styling here
+}
+If there are multiple targets.
+a[target='_self'] or a[target='_blank']
+{
+    styling here
+}
+or we can also give the id to the attributes and style them accordingly 
+
+For example we have 100 items in the list with li tag
+we just want to apply css to some of them like 4th one
+we use the below nth method which looks like this
+
+ /* Below code will apply css for the fourth child of the list */
+        /* li:nth-child(4) {
+            color: red;
+        } */
+
+        /* Below code will apply css to every items leaving a gap  */
+        li:nth-child(2n+0) {
+            color: white;
+            background-color: blue;
+        }
+
+ /*  Below is the code to style the odd and even childs */
+        li:nth-child(even) {
+            background-color: rgb(189, 198, 198);
+            color: black;
+        }
+
+        li:nth-child(odd) {
+            background-color: rgb(0, 0, 0);
+            color: rgb(0, 222, 215);
+        }

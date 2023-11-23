@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoBeforeAndAfterSelectors</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Xanh+Mono&display=swap');
+
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: aliceblue;
+            font-family: 'Source code pro', monospace;
+            font-weight: bold;
+
+        }
+
+        header::before {
+            background: url('https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+            opacity: 0.5;
+
+            /*The background image is used in header before in place of using it in body because it makes us able to modify the opacity and positioning of the image separately without harming the positions of the texts and other contents */
+        }
+
+        .navigation {
+            display: flex;
+            font-size: 20px;
+
+
+        }
+
+        li {
+            list-style: none;
+            padding: 34px 23px;
+        }
+
+        section {
+            height: 500px;
+
+            /* border: 2px solid skyblue; */
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* align items is for aligning item horizontally*/
+            justify-content: center;
+            /* justify content is used for aligning content vertically as coded above */
+        }
+
+        /* section::before {
+            content: "This is a content using section before in css"
+        }
+
+        section::after {
+            content: " This is a content using section after in css"
+        } */
+
+        p {
+            padding: 3px;
+            font-size: 19px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            padding-left: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section>
+        <h1>Welcome to coding community</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iure excepturi repellendus esse mollitia
+            eaque molestiae impedit, soluta repellat architecto quas deserunt commodi? Corrupti quod sunt omnis
+            quisquam totam, dolore quae vitae accusamus commodi minus voluptas blanditiis sit quis voluptatibus nih
+        </p>
+    </section>
+    <hr>
+
+</body>
+
+</html>
